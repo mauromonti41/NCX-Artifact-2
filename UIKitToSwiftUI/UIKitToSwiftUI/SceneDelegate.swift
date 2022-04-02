@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  NCX Artifact 2 UIKit
+//  UIKitToSwiftUI
 //
 //  Created by Mauro Monti on 01/04/22.
 //

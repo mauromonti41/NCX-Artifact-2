@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  NCX Artifact 2 UIKit
+//  UIKitToSwiftUI
 //
 //  Created by Mauro Monti on 01/04/22.
 //
@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController , UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
     var imageToPass : Image?
     
@@ -39,6 +39,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
 
-    
 }
 

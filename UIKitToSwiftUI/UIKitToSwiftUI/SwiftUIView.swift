@@ -1,6 +1,6 @@
 //
 //  SwiftUIView.swift
-//  NCX Artifact 2 UIKit
+//  UIKitToSwiftUI
 //
 //  Created by Mauro Monti on 01/04/22.
 //
@@ -12,8 +12,8 @@ struct SwiftUIView: View {
     @State var image : Image?
     
     var body: some View {
-        image ?? Image("default")
-            .clipShape(Circle()) as! Image
+        Image("default")
+//            .clipShape(Circle())
     }
 }
 
