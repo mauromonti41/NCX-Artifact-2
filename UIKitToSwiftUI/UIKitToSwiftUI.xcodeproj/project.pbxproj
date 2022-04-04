@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4248381A27FAF71300020FB5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248381927FAF71300020FB5 /* Data.swift */; };
+		4248381C27FB168400020FB5 /* Bool Var.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248381B27FB168400020FB5 /* Bool Var.swift */; };
+		4248382127FB4D2300020FB5 /* TwoAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248382027FB4D2300020FB5 /* TwoAnimationsView.swift */; };
+		4248382327FB4D4800020FB5 /* SingleAnimationPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248382227FB4D4800020FB5 /* SingleAnimationPulse.swift */; };
+		4248382527FB4D5900020FB5 /* SingleAnimationSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248382427FB4D5900020FB5 /* SingleAnimationSpin.swift */; };
+		4248382727FB4D7300020FB5 /* NoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248382627FB4D7300020FB5 /* NoAnimationView.swift */; };
 		4286287227F790FA00DEA53E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4286287127F790FA00DEA53E /* AppDelegate.swift */; };
 		4286287427F790FA00DEA53E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4286287327F790FA00DEA53E /* SceneDelegate.swift */; };
 		4286287627F790FA00DEA53E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4286287527F790FA00DEA53E /* ViewController.swift */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4248381927FAF71300020FB5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4248381B27FB168400020FB5 /* Bool Var.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool Var.swift"; sourceTree = "<group>"; };
+		4248382027FB4D2300020FB5 /* TwoAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoAnimationsView.swift; sourceTree = "<group>"; };
+		4248382227FB4D4800020FB5 /* SingleAnimationPulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnimationPulse.swift; sourceTree = "<group>"; };
+		4248382427FB4D5900020FB5 /* SingleAnimationSpin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnimationSpin.swift; sourceTree = "<group>"; };
+		4248382627FB4D7300020FB5 /* NoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAnimationView.swift; sourceTree = "<group>"; };
 		4286286E27F790FA00DEA53E /* UIKitToSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitToSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4286287127F790FA00DEA53E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4286287327F790FA00DEA53E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +53,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4248381D27FB1BF400020FB5 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				4248381927FAF71300020FB5 /* Data.swift */,
+				4248381B27FB168400020FB5 /* Bool Var.swift */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
+		4248381E27FB1C0200020FB5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4286287527F790FA00DEA53E /* ViewController.swift */,
+				4286288527F7916800DEA53E /* GalleryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4248381F27FB1C1000020FB5 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				4286288727F794D000DEA53E /* SwiftUIView.swift */,
+				4248382027FB4D2300020FB5 /* TwoAnimationsView.swift */,
+				4248382227FB4D4800020FB5 /* SingleAnimationPulse.swift */,
+				4248382427FB4D5900020FB5 /* SingleAnimationSpin.swift */,
+				4248382627FB4D7300020FB5 /* NoAnimationView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		4286286527F790FA00DEA53E = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +104,9 @@
 			children = (
 				4286287127F790FA00DEA53E /* AppDelegate.swift */,
 				4286287327F790FA00DEA53E /* SceneDelegate.swift */,
-				4286287527F790FA00DEA53E /* ViewController.swift */,
-				4286288527F7916800DEA53E /* GalleryViewController.swift */,
-				4286288727F794D000DEA53E /* SwiftUIView.swift */,
+				4248381E27FB1C0200020FB5 /* ViewControllers */,
+				4248381D27FB1BF400020FB5 /* Datas */,
+				4248381F27FB1C1000020FB5 /* SwiftUI */,
 				4286287727F790FA00DEA53E /* Main.storyboard */,
 				4286287A27F790FC00DEA53E /* Assets.xcassets */,
 				4286287C27F790FC00DEA53E /* LaunchScreen.storyboard */,
@@ -144,9 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4248382527FB4D5900020FB5 /* SingleAnimationSpin.swift in Sources */,
 				4286287627F790FA00DEA53E /* ViewController.swift in Sources */,
+				4248382727FB4D7300020FB5 /* NoAnimationView.swift in Sources */,
+				4248381A27FAF71300020FB5 /* Data.swift in Sources */,
+				4248382127FB4D2300020FB5 /* TwoAnimationsView.swift in Sources */,
 				4286288627F7916800DEA53E /* GalleryViewController.swift in Sources */,
 				4286287227F790FA00DEA53E /* AppDelegate.swift in Sources */,
+				4248381C27FB168400020FB5 /* Bool Var.swift in Sources */,
+				4248382327FB4D4800020FB5 /* SingleAnimationPulse.swift in Sources */,
 				4286287427F790FA00DEA53E /* SceneDelegate.swift in Sources */,
 				4286288827F794D000DEA53E /* SwiftUIView.swift in Sources */,
 			);

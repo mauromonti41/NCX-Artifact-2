@@ -10,7 +10,7 @@ import SwiftUI
 
 class ViewController: UIViewController , UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
-    var imageToPass : Image?
+//    @State var imageToPass : Image?
     
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         guard let image = info[.editedImage] as? UIImage else {return}
-        imageToPass = Image(uiImage: image)
+        imageToDisplay = Image(uiImage: image)
         dismiss(animated: true)
         
     }

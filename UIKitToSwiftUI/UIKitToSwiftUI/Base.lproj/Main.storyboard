@@ -73,29 +73,77 @@
         <scene sceneID="9Pz-tp-Oca">
             <objects>
                 <viewController storyboardIdentifier="vc2" id="pyN-MI-Sdi" customClass="GalleryViewController" customModule="UIKitToSwiftUI" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FK2-j2-Shl" customClass="GalleryViewControler">
+                    <view key="view" contentMode="scaleToFill" id="FK2-j2-Shl" customClass="GalleryViewControler" customModule="UIKitToSwiftUI" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-D3-PXd">
-                                <rect key="frame" x="107" y="321" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="AJE-HM-z7v"/>
-                                    <constraint firstAttribute="width" constant="200" id="xgk-pq-ttW"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="PU3-jG-NWP" kind="embed" destinationCreationSelector="embedSwiftUIView:" id="OvE-uX-rf4"/>
-                                </connections>
-                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="aTE-Fd-3lU">
+                                <rect key="frame" x="39" y="234" width="336" height="374"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-D3-PXd">
+                                        <rect key="frame" x="68" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="8mX-C4-NIG"/>
+                                            <constraint firstAttribute="width" constant="200" id="tpz-AT-IJC"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="PU3-jG-NWP" kind="embed" destinationCreationSelector="embedSwiftUIView:" id="OvE-uX-rf4"/>
+                                        </connections>
+                                    </containerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AGK-ZA-kjr">
+                                        <rect key="frame" x="0.0" y="272" width="336" height="102"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="140" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXb-2s-wo0">
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spinning Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FH5-gc-Ncf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtM-R7-wpt">
+                                                        <rect key="frame" x="287" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="spinToggler:" destination="pyN-MI-Sdi" eventType="valueChanged" id="81a-rJ-xZ2"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="Tva-ix-Pz8">
+                                                <rect key="frame" x="0.0" y="71" width="336" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pulsing Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVx-Bu-DEs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="233" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmb-sv-jtd">
+                                                        <rect key="frame" x="287" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="pulseToggler:" destination="pyN-MI-Sdi" eventType="valueChanged" id="c10-O1-wI6"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EH8-ha-leg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8bB-D3-PXd" firstAttribute="centerY" secondItem="FK2-j2-Shl" secondAttribute="centerY" id="7La-IS-iVC"/>
-                            <constraint firstItem="8bB-D3-PXd" firstAttribute="centerX" secondItem="FK2-j2-Shl" secondAttribute="centerX" id="KeI-X4-Hne"/>
+                            <constraint firstItem="aTE-Fd-3lU" firstAttribute="centerX" secondItem="FK2-j2-Shl" secondAttribute="centerX" id="EP7-9A-9sl"/>
+                            <constraint firstItem="aTE-Fd-3lU" firstAttribute="centerY" secondItem="FK2-j2-Shl" secondAttribute="centerY" id="qrz-n9-SAj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2lk-Hx-aFz"/>
+                    <connections>
+                        <outlet property="pulsingToggle" destination="zmb-sv-jtd" id="YbP-dn-wrX"/>
+                        <outlet property="spinningToggle" destination="dtM-R7-wpt" id="l0J-jq-8iL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqT-Dp-6v7" sceneMemberID="firstResponder"/>
             </objects>

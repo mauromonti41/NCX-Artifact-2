@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>This App needs to use your camera in order to take photos and display them</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This App needs to access your gallery in order to let you select and display images</string>
 </dict>
 </plist>
