@@ -22,6 +22,8 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
         
         let picker = UIImagePickerController()
         
+        picker.sourceType = .camera
+        
         picker.allowsEditing = true
         
         picker.delegate = self

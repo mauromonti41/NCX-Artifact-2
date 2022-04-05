@@ -9,17 +9,18 @@ import SwiftUI
 
 struct SwiftUIView: View {
     
+    @ObservedObject var delegate : SwiftUIDelegate
 //    var spinningAnimationOn :  Bool
 //    var pulsingAnimationOn  :  Bool
     
     var body: some View {
-        if spinningAnimationOn && pulsingAnimationOn {
+        if delegate.spinningAnimationOn && delegate.pulsingAnimationOn {
             TwoAnimationsView()
         }
-        else if spinningAnimationOn && !pulsingAnimationOn{
+        else if delegate.spinningAnimationOn && !delegate.pulsingAnimationOn{
             SingleAnimationSpin()
         }
-        else if !spinningAnimationOn && pulsingAnimationOn{
+        else if !delegate.spinningAnimationOn && delegate.pulsingAnimationOn{
             SingleAnimationPulse()
         }
         else{

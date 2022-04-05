@@ -11,6 +11,8 @@ import SwiftUI
 
 class GalleryViewController: UIViewController{
     
+    var delegate = SwiftUIDelegate()
+    
     @IBOutlet var spinningToggle: UISwitch!
     @IBOutlet var pulsingToggle:  UISwitch!
     
@@ -24,24 +26,24 @@ class GalleryViewController: UIViewController{
     @IBAction func spinToggler(_ sender: Any) {
       
         if spinningToggle.isOn{
-            spinningAnimationOn = true
+            self.delegate.spinningAnimationOn = true
         }
         else{
-            spinningAnimationOn = false
+            self.delegate.spinningAnimationOn = false
         }
     }
     
     @IBAction func pulseToggler(_ sender: Any) {
         if pulsingToggle.isOn{
-            pulsingAnimationOn = true
+            self.delegate.pulsingAnimationOn = true
         }
         else {
-            pulsingAnimationOn = false
+            self.delegate.pulsingAnimationOn = false
         }
     }
     
     @IBSegueAction func embedSwiftUIView(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder, rootView: SwiftUIView())
+        return UIHostingController(coder: coder, rootView: SwiftUIView(delegate: delegate))
     }
 }
 

@@ -10,5 +10,7 @@ import SwiftUI
 
 var imageToDisplay : Image?
 
-var spinningAnimationOn :  Bool = false
-var pulsingAnimationOn  :  Bool = false
+class SwiftUIDelegate : ObservableObject {
+        @Published var spinningAnimationOn :  Bool = false
+        @Published var pulsingAnimationOn  :  Bool = false
+}
