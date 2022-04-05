@@ -9,3 +9,6 @@ import Foundation
 import SwiftUI
 
 var imageToDisplay : Image?
+
+var spinningAnimationOn :  Bool = false
+var pulsingAnimationOn  :  Bool = false

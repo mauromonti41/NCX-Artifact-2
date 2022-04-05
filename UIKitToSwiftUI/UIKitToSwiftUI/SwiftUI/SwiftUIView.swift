@@ -9,16 +9,17 @@ import SwiftUI
 
 struct SwiftUIView: View {
     
-    @StateObject var sample = Sample()
+//    var spinningAnimationOn :  Bool
+//    var pulsingAnimationOn  :  Bool
     
     var body: some View {
-        if sample.spinningAnimationOn && sample.pulsingAnimationOn {
+        if spinningAnimationOn && pulsingAnimationOn {
             TwoAnimationsView()
         }
-        else if sample.spinningAnimationOn && !sample.pulsingAnimationOn{
+        else if spinningAnimationOn && !pulsingAnimationOn{
             SingleAnimationSpin()
         }
-        else if !sample.spinningAnimationOn && sample.pulsingAnimationOn{
+        else if !spinningAnimationOn && pulsingAnimationOn{
             SingleAnimationPulse()
         }
         else{

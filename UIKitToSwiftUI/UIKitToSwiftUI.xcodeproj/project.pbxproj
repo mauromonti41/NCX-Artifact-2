@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4248381A27FAF71300020FB5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248381927FAF71300020FB5 /* Data.swift */; };
-		4248381C27FB168400020FB5 /* Bool Var.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248381B27FB168400020FB5 /* Bool Var.swift */; };
 		4248382127FB4D2300020FB5 /* TwoAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248382027FB4D2300020FB5 /* TwoAnimationsView.swift */; };
 		4248382327FB4D4800020FB5 /* SingleAnimationPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248382227FB4D4800020FB5 /* SingleAnimationPulse.swift */; };
 		4248382527FB4D5900020FB5 /* SingleAnimationSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248382427FB4D5900020FB5 /* SingleAnimationSpin.swift */; };
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		4248381927FAF71300020FB5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		4248381B27FB168400020FB5 /* Bool Var.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool Var.swift"; sourceTree = "<group>"; };
 		4248382027FB4D2300020FB5 /* TwoAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoAnimationsView.swift; sourceTree = "<group>"; };
 		4248382227FB4D4800020FB5 /* SingleAnimationPulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnimationPulse.swift; sourceTree = "<group>"; };
 		4248382427FB4D5900020FB5 /* SingleAnimationSpin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnimationSpin.swift; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				4248381927FAF71300020FB5 /* Data.swift */,
-				4248381B27FB168400020FB5 /* Bool Var.swift */,
 			);
 			path = Datas;
 			sourceTree = "<group>";
@@ -193,7 +190,6 @@
 				4248382127FB4D2300020FB5 /* TwoAnimationsView.swift in Sources */,
 				4286288627F7916800DEA53E /* GalleryViewController.swift in Sources */,
 				4286287227F790FA00DEA53E /* AppDelegate.swift in Sources */,
-				4248381C27FB168400020FB5 /* Bool Var.swift in Sources */,
 				4248382327FB4D4800020FB5 /* SingleAnimationPulse.swift in Sources */,
 				4286287427F790FA00DEA53E /* SceneDelegate.swift in Sources */,
 				4286288827F794D000DEA53E /* SwiftUIView.swift in Sources */,

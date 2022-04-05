@@ -31,13 +31,9 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
         guard let image = info[.editedImage] as? UIImage else {return}
         imageToDisplay = Image(uiImage: image)
         dismiss(animated: true)
-        
     }
-
-
 }
 

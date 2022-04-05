@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="98"/>
+            <point key="canvasLocation" x="819" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d1p-9c-zRY">
@@ -105,7 +105,7 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtM-R7-wpt">
                                                         <rect key="frame" x="287" y="0.0" width="51" height="31"/>
                                                         <connections>
-                                                            <action selector="spinToggler:" destination="pyN-MI-Sdi" eventType="valueChanged" id="81a-rJ-xZ2"/>
+                                                            <action selector="spinToggler:" destination="pyN-MI-Sdi" eventType="touchUpInside" id="Z21-jx-Hpe"/>
                                                         </connections>
                                                     </switch>
                                                 </subviews>
@@ -122,7 +122,7 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmb-sv-jtd">
                                                         <rect key="frame" x="287" y="0.0" width="51" height="31"/>
                                                         <connections>
-                                                            <action selector="pulseToggler:" destination="pyN-MI-Sdi" eventType="valueChanged" id="c10-O1-wI6"/>
+                                                            <action selector="pulseToggler:" destination="pyN-MI-Sdi" eventType="touchUpInside" id="EM9-GZ-1Kl"/>
                                                         </connections>
                                                     </switch>
                                                 </subviews>
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqT-Dp-6v7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="98"/>
+            <point key="canvasLocation" x="1633" y="98"/>
         </scene>
         <!--Hosting Controller-->
         <scene sceneID="omJ-KJ-tOR">
