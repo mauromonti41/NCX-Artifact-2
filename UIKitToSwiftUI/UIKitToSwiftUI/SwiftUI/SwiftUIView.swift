@@ -10,8 +10,6 @@ import SwiftUI
 struct SwiftUIView: View {
     
     @ObservedObject var delegate : SwiftUIDelegate
-//    var spinningAnimationOn :  Bool
-//    var pulsingAnimationOn  :  Bool
     
     var body: some View {
         if delegate.spinningAnimationOn && delegate.pulsingAnimationOn {
